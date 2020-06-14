@@ -41,7 +41,7 @@ public class Rps {
             System.out.println("You win!");
         } else if (Arrays.asList(
                 convertIntArrToIntegerArray(
-                        Arrays.copyOfRange(stepsNumbers, stepsNumbers.length / 2, stepsNumbers.length))).contains(computerStep)) {
+                        Arrays.copyOfRange(stepsNumbers, (stepsNumbers.length / 2) + 1, stepsNumbers.length))).contains(computerStep)) {
             System.out.println("Computer win!");
 
         } else {

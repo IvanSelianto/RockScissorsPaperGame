@@ -10,6 +10,7 @@ public class Main {
         Set<String> uniqueArgs = new HashSet<>();
         uniqueArgs.addAll(Arrays.asList(args));
 
+
         if (args.length % 2 != 0 && args.length == uniqueArgs.size() && args.length > 1) {
             rps.createNumbersOfSteps(args);
             ConsoleMenu menu = new ConsoleMenu();
@@ -18,8 +19,10 @@ public class Main {
         } else {
             System.out.println("Error!");
         }
+
     }
 }
+        
 
 
 
